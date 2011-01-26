@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """A module for using ldap to manipulate objects in AD.
 
 This module creates two basic object classes: Domain, and ADObject.
