@@ -158,14 +158,18 @@ class Domain(object):
     if cert_file:
       ldap.set_option(ldap.OPT_X_TLS_CACERTFILE, cert_file)
 
+
+    # NOTE: I intentionally wrote this to use ldaps instead of ldap.  Using
+    #       a non-SSL connection will send your domain password over the wire
+    #       in cleartext.
     try:
       self._ldap = ldap.initialize('ldaps://%s' % ldap_host)
       self._ldap.simple_bind_s(user, password)
       self._connected = True
       self._ldap.set_option(ldap.OPT_REFERRALS, 0)
       self.GetRootDseAttrs()
-    except ldap.SERVER_DOWN:
-      raise errors.LDAPConnectionFailedError
+    except ldap.SERVER_DOWN, e:
+      raise errors.LDAPConnectionFailedError(e.args[0]['info'])
     except ldap.INVALID_CREDENTIALS:
       raise errors.InvalidCredentialsError
 
