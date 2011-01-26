@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """ ad_ldap installation script.
 
 Copyright 2010 Google Inc.

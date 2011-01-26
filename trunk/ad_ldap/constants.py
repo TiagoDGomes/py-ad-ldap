@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """A module containing constants used by adldap module.
 
 Copyright 2010 Google Inc.

@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """A module containing the exception classes for the adldap module.
 
 Copyright 2010 Google Inc.
