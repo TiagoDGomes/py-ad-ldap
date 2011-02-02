@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ad_ldap.constants</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ad_ldap-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/py-ad-ldap">py-ad-ldap</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ad_ldap-module.html">Package&nbsp;ad_ldap</a> ::
+        Module&nbsp;constants
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ad_ldap.constants-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="ad_ldap.constants-module.html">Module ad_ldap.constants</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt class="py-docstring">"""A module containing constants used by adldap module.</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">Copyright 2010 Google Inc.</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">Licensed under the Apache License, Version 2.0 (the "License");</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">you may not use this file except in compliance with the License.</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring">You may obtain a copy of the License at</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-docstring">     http://www.apache.org/licenses/LICENSE-2.0</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"><tt class="py-docstring">Unless required by applicable law or agreed to in writing, software</tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-docstring">distributed under the License is distributed on an "AS IS" BASIS,</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-docstring">WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"><tt class="py-docstring">See the License for the specific language governing permissions and</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"><tt class="py-docstring">limitations under the License.</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">re</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line"> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"><tt class="py-comment"># Properties that must be included by default for any ADObject</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-0" class="py-name" targets="Variable ad_ldap.constants.MANDATORY_PROPS_DEFAULT=ad_ldap.constants-module.html#MANDATORY_PROPS_DEFAULT"><a title="ad_ldap.constants.MANDATORY_PROPS_DEFAULT" class="py-name" href="#" onclick="return doclink('link-0', 'MANDATORY_PROPS_DEFAULT', 'link-0');">MANDATORY_PROPS_DEFAULT</a></tt> <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'distinguishedName'</tt><tt class="py-op">,</tt> <tt class="py-string">'objectClass'</tt><tt class="py-op">,</tt> <tt class="py-string">'objectCategory'</tt><tt class="py-op">,</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">                           <tt class="py-string">'name'</tt><tt class="py-op">,</tt> <tt class="py-string">'description'</tt><tt class="py-op">,</tt> <tt class="py-string">'createTimeStamp'</tt><tt class="py-op">,</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">                           <tt class="py-string">'modifyTimeStamp'</tt><tt class="py-op">)</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"><tt class="py-comment"># Default properties for User objects</tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-1" class="py-name" targets="Variable ad_ldap.constants.MANDATORY_PROPS_USER=ad_ldap.constants-module.html#MANDATORY_PROPS_USER"><a title="ad_ldap.constants.MANDATORY_PROPS_USER" class="py-name" href="#" onclick="return doclink('link-1', 'MANDATORY_PROPS_USER', 'link-1');">MANDATORY_PROPS_USER</a></tt> <tt class="py-op">=</tt> <tt id="link-2" class="py-name"><a title="ad_ldap.constants.MANDATORY_PROPS_DEFAULT" class="py-name" href="#" onclick="return doclink('link-2', 'MANDATORY_PROPS_DEFAULT', 'link-0');">MANDATORY_PROPS_DEFAULT</a></tt> <tt class="py-op">+</tt> <tt class="py-op">(</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">    <tt class="py-string">'sAMAccountName'</tt><tt class="py-op">,</tt> <tt class="py-string">'msDS-User-Account-Control-Computed'</tt><tt class="py-op">,</tt> <tt class="py-string">'memberOf'</tt><tt class="py-op">)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"><tt class="py-comment"># Default properties for Computer objects</tt> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-3" class="py-name" targets="Variable ad_ldap.constants.MANDATORY_PROPS_COMPUTER=ad_ldap.constants-module.html#MANDATORY_PROPS_COMPUTER"><a title="ad_ldap.constants.MANDATORY_PROPS_COMPUTER" class="py-name" href="#" onclick="return doclink('link-3', 'MANDATORY_PROPS_COMPUTER', 'link-3');">MANDATORY_PROPS_COMPUTER</a></tt> <tt class="py-op">=</tt> <tt id="link-4" class="py-name"><a title="ad_ldap.constants.MANDATORY_PROPS_USER" class="py-name" href="#" onclick="return doclink('link-4', 'MANDATORY_PROPS_USER', 'link-1');">MANDATORY_PROPS_USER</a></tt> <tt class="py-op">+</tt> <tt class="py-op">(</tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">    <tt class="py-string">'servicePrincipalName'</tt><tt class="py-op">,</tt> <tt class="py-string">'dNSHostname'</tt><tt class="py-op">,</tt> <tt class="py-string">'operatingSystem'</tt><tt class="py-op">,</tt> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line">    <tt class="py-string">'operatingSystemServicePack'</tt><tt class="py-op">,</tt> <tt class="py-string">'operatingSystemVersion'</tt><tt class="py-op">)</tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line"><tt class="py-comment"># Default properties for Group objects</tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-5" class="py-name" targets="Variable ad_ldap.constants.MANDATORY_PROPS_GROUP=ad_ldap.constants-module.html#MANDATORY_PROPS_GROUP"><a title="ad_ldap.constants.MANDATORY_PROPS_GROUP" class="py-name" href="#" onclick="return doclink('link-5', 'MANDATORY_PROPS_GROUP', 'link-5');">MANDATORY_PROPS_GROUP</a></tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name"><a title="ad_ldap.constants.MANDATORY_PROPS_DEFAULT" class="py-name" href="#" onclick="return doclink('link-6', 'MANDATORY_PROPS_DEFAULT', 'link-0');">MANDATORY_PROPS_DEFAULT</a></tt> <tt class="py-op">+</tt> <tt class="py-op">(</tt><tt class="py-string">'groupType'</tt><tt class="py-op">,</tt><tt class="py-op">)</tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"><tt class="py-comment"># ADS_USER_FLAG_ENUM as listed by Microsoft.  It defines flags in the</tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt class="py-comment"># userAccountControl bitmask.  Doing a bitwise AND between the</tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt class="py-comment"># userAccountControl attribute of a user and the constant will tell you if</tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt class="py-comment"># that boolean option is set on their account</tt> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-7" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_SCRIPT=ad_ldap.constants-module.html#ADS_UF_SCRIPT"><a title="ad_ldap.constants.ADS_UF_SCRIPT" class="py-name" href="#" onclick="return doclink('link-7', 'ADS_UF_SCRIPT', 'link-7');">ADS_UF_SCRIPT</a></tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line"><tt id="link-8" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_ACCOUNTDISABLE=ad_ldap.constants-module.html#ADS_UF_ACCOUNTDISABLE"><a title="ad_ldap.constants.ADS_UF_ACCOUNTDISABLE" class="py-name" href="#" onclick="return doclink('link-8', 'ADS_UF_ACCOUNTDISABLE', 'link-8');">ADS_UF_ACCOUNTDISABLE</a></tt> <tt class="py-op">=</tt> <tt class="py-number">2</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line"><tt id="link-9" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_HOMEDIR_REQUIRED=ad_ldap.constants-module.html#ADS_UF_HOMEDIR_REQUIRED"><a title="ad_ldap.constants.ADS_UF_HOMEDIR_REQUIRED" class="py-name" href="#" onclick="return doclink('link-9', 'ADS_UF_HOMEDIR_REQUIRED', 'link-9');">ADS_UF_HOMEDIR_REQUIRED</a></tt> <tt class="py-op">=</tt> <tt class="py-number">8</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line"><tt id="link-10" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_LOCKOUT=ad_ldap.constants-module.html#ADS_UF_LOCKOUT"><a title="ad_ldap.constants.ADS_UF_LOCKOUT" class="py-name" href="#" onclick="return doclink('link-10', 'ADS_UF_LOCKOUT', 'link-10');">ADS_UF_LOCKOUT</a></tt> <tt class="py-op">=</tt> <tt class="py-number">16</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line"><tt id="link-11" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_PASSWD_NOTREQD=ad_ldap.constants-module.html#ADS_UF_PASSWD_NOTREQD"><a title="ad_ldap.constants.ADS_UF_PASSWD_NOTREQD" class="py-name" href="#" onclick="return doclink('link-11', 'ADS_UF_PASSWD_NOTREQD', 'link-11');">ADS_UF_PASSWD_NOTREQD</a></tt> <tt class="py-op">=</tt> <tt class="py-number">32</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line"><tt id="link-12" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_PASSWD_CANT_CHANGE=ad_ldap.constants-module.html#ADS_UF_PASSWD_CANT_CHANGE"><a title="ad_ldap.constants.ADS_UF_PASSWD_CANT_CHANGE" class="py-name" href="#" onclick="return doclink('link-12', 'ADS_UF_PASSWD_CANT_CHANGE', 'link-12');">ADS_UF_PASSWD_CANT_CHANGE</a></tt> <tt class="py-op">=</tt> <tt class="py-number">64</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"><tt id="link-13" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_ENCRYPTED_TEXT_PASSWORD_ALLOWED=ad_ldap.constants-module.html#ADS_UF_ENCRYPTED_TEXT_PASSWORD_ALLOWED"><a title="ad_ldap.constants.ADS_UF_ENCRYPTED_TEXT_PASSWORD_ALLOWED" class="py-name" href="#" onclick="return doclink('link-13', 'ADS_UF_ENCRYPTED_TEXT_PASSWORD_ALLOWED', 'link-13');">ADS_UF_ENCRYPTED_TEXT_PASSWORD_ALLOWED</a></tt> <tt class="py-op">=</tt> <tt class="py-number">128</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"><tt id="link-14" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_TEMP_DUPLICATE_ACCOUNT=ad_ldap.constants-module.html#ADS_UF_TEMP_DUPLICATE_ACCOUNT"><a title="ad_ldap.constants.ADS_UF_TEMP_DUPLICATE_ACCOUNT" class="py-name" href="#" onclick="return doclink('link-14', 'ADS_UF_TEMP_DUPLICATE_ACCOUNT', 'link-14');">ADS_UF_TEMP_DUPLICATE_ACCOUNT</a></tt> <tt class="py-op">=</tt> <tt class="py-number">256</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"><tt id="link-15" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_NORMAL_ACCOUNT=ad_ldap.constants-module.html#ADS_UF_NORMAL_ACCOUNT"><a title="ad_ldap.constants.ADS_UF_NORMAL_ACCOUNT" class="py-name" href="#" onclick="return doclink('link-15', 'ADS_UF_NORMAL_ACCOUNT', 'link-15');">ADS_UF_NORMAL_ACCOUNT</a></tt> <tt class="py-op">=</tt> <tt class="py-number">512</tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line"><tt id="link-16" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_INTERDOMAIN_TRUST_ACCOUNT=ad_ldap.constants-module.html#ADS_UF_INTERDOMAIN_TRUST_ACCOUNT"><a title="ad_ldap.constants.ADS_UF_INTERDOMAIN_TRUST_ACCOUNT" class="py-name" href="#" onclick="return doclink('link-16', 'ADS_UF_INTERDOMAIN_TRUST_ACCOUNT', 'link-16');">ADS_UF_INTERDOMAIN_TRUST_ACCOUNT</a></tt> <tt class="py-op">=</tt> <tt class="py-number">2048</tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"><tt id="link-17" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_WORKSTATION_TRUST_ACCOUNT=ad_ldap.constants-module.html#ADS_UF_WORKSTATION_TRUST_ACCOUNT"><a title="ad_ldap.constants.ADS_UF_WORKSTATION_TRUST_ACCOUNT" class="py-name" href="#" onclick="return doclink('link-17', 'ADS_UF_WORKSTATION_TRUST_ACCOUNT', 'link-17');">ADS_UF_WORKSTATION_TRUST_ACCOUNT</a></tt> <tt class="py-op">=</tt> <tt class="py-number">4096</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"><tt id="link-18" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_SERVER_TRUST_ACCOUNT=ad_ldap.constants-module.html#ADS_UF_SERVER_TRUST_ACCOUNT"><a title="ad_ldap.constants.ADS_UF_SERVER_TRUST_ACCOUNT" class="py-name" href="#" onclick="return doclink('link-18', 'ADS_UF_SERVER_TRUST_ACCOUNT', 'link-18');">ADS_UF_SERVER_TRUST_ACCOUNT</a></tt> <tt class="py-op">=</tt> <tt class="py-number">8192</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line"><tt id="link-19" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_DONT_EXPIRE_PASSWD=ad_ldap.constants-module.html#ADS_UF_DONT_EXPIRE_PASSWD"><a title="ad_ldap.constants.ADS_UF_DONT_EXPIRE_PASSWD" class="py-name" href="#" onclick="return doclink('link-19', 'ADS_UF_DONT_EXPIRE_PASSWD', 'link-19');">ADS_UF_DONT_EXPIRE_PASSWD</a></tt> <tt class="py-op">=</tt> <tt class="py-number">65536</tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"><tt id="link-20" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_MNS_LOGON_ACCOUNT=ad_ldap.constants-module.html#ADS_UF_MNS_LOGON_ACCOUNT"><a title="ad_ldap.constants.ADS_UF_MNS_LOGON_ACCOUNT" class="py-name" href="#" onclick="return doclink('link-20', 'ADS_UF_MNS_LOGON_ACCOUNT', 'link-20');">ADS_UF_MNS_LOGON_ACCOUNT</a></tt> <tt class="py-op">=</tt> <tt class="py-number">131072</tt> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line"><tt id="link-21" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_SMARTCARD_REQUIRED=ad_ldap.constants-module.html#ADS_UF_SMARTCARD_REQUIRED"><a title="ad_ldap.constants.ADS_UF_SMARTCARD_REQUIRED" class="py-name" href="#" onclick="return doclink('link-21', 'ADS_UF_SMARTCARD_REQUIRED', 'link-21');">ADS_UF_SMARTCARD_REQUIRED</a></tt> <tt class="py-op">=</tt> <tt class="py-number">262144</tt> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line"><tt id="link-22" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_TRUSTED_FOR_DELEGATION=ad_ldap.constants-module.html#ADS_UF_TRUSTED_FOR_DELEGATION"><a title="ad_ldap.constants.ADS_UF_TRUSTED_FOR_DELEGATION" class="py-name" href="#" onclick="return doclink('link-22', 'ADS_UF_TRUSTED_FOR_DELEGATION', 'link-22');">ADS_UF_TRUSTED_FOR_DELEGATION</a></tt> <tt class="py-op">=</tt> <tt class="py-number">524288</tt> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line"><tt id="link-23" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_NOT_DELEGATED=ad_ldap.constants-module.html#ADS_UF_NOT_DELEGATED"><a title="ad_ldap.constants.ADS_UF_NOT_DELEGATED" class="py-name" href="#" onclick="return doclink('link-23', 'ADS_UF_NOT_DELEGATED', 'link-23');">ADS_UF_NOT_DELEGATED</a></tt> <tt class="py-op">=</tt> <tt class="py-number">1048576</tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line"><tt id="link-24" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_USE_DES_KEY_ONLY=ad_ldap.constants-module.html#ADS_UF_USE_DES_KEY_ONLY"><a title="ad_ldap.constants.ADS_UF_USE_DES_KEY_ONLY" class="py-name" href="#" onclick="return doclink('link-24', 'ADS_UF_USE_DES_KEY_ONLY', 'link-24');">ADS_UF_USE_DES_KEY_ONLY</a></tt> <tt class="py-op">=</tt> <tt class="py-number">2097152</tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line"><tt id="link-25" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_DONT_REQUIRE_PREAUTH=ad_ldap.constants-module.html#ADS_UF_DONT_REQUIRE_PREAUTH"><a title="ad_ldap.constants.ADS_UF_DONT_REQUIRE_PREAUTH" class="py-name" href="#" onclick="return doclink('link-25', 'ADS_UF_DONT_REQUIRE_PREAUTH', 'link-25');">ADS_UF_DONT_REQUIRE_PREAUTH</a></tt> <tt class="py-op">=</tt> <tt class="py-number">4194304</tt> </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line"><tt id="link-26" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_PASSWORD_EXPIRED=ad_ldap.constants-module.html#ADS_UF_PASSWORD_EXPIRED"><a title="ad_ldap.constants.ADS_UF_PASSWORD_EXPIRED" class="py-name" href="#" onclick="return doclink('link-26', 'ADS_UF_PASSWORD_EXPIRED', 'link-26');">ADS_UF_PASSWORD_EXPIRED</a></tt> <tt class="py-op">=</tt> <tt class="py-number">8388608</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line"><tt id="link-27" class="py-name" targets="Variable ad_ldap.constants.ADS_UF_TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION=ad_ldap.constants-module.html#ADS_UF_TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION"><a title="ad_ldap.constants.ADS_UF_TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION" class="py-name" href="#" onclick="return doclink('link-27', 'ADS_UF_TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION', 'link-27');">ADS_UF_TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION</a></tt> <tt class="py-op">=</tt> <tt class="py-number">16777216</tt> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line"> </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line"><tt class="py-comment"># The difference in 100ns ticks between the Microsoft epoch (Jan 1, 1601) and</tt> </tt>
+<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt class="py-comment"># the Unix epoch (Jan 1, 1970) for use in ADTimeToUnix</tt> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-28" class="py-name" targets="Variable ad_ldap.constants.EPOCH_AS_FILETIME=ad_ldap.constants-module.html#EPOCH_AS_FILETIME"><a title="ad_ldap.constants.EPOCH_AS_FILETIME" class="py-name" href="#" onclick="return doclink('link-28', 'EPOCH_AS_FILETIME', 'link-28');">EPOCH_AS_FILETIME</a></tt> <tt class="py-op">=</tt> <tt class="py-number">116444736000000000</tt> </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line"> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line"><tt class="py-comment"># For attributes in YYYYMMDDHHMMSS.0Z format</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-29" class="py-name" targets="Variable ad_ldap.constants.RE_TEXT_TIME=ad_ldap.constants-module.html#RE_TEXT_TIME"><a title="ad_ldap.constants.RE_TEXT_TIME" class="py-name" href="#" onclick="return doclink('link-29', 'RE_TEXT_TIME', 'link-29');">RE_TEXT_TIME</a></tt> <tt class="py-op">=</tt> <tt class="py-name">re</tt><tt class="py-op">.</tt><tt class="py-name">compile</tt><tt class="py-op">(</tt><tt class="py-string">'^(\d{4})(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)\.0Z$'</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line"> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line"><tt class="py-comment"># For getting the compturname from an FQDN</tt> </tt>
+<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-30" class="py-name" targets="Variable ad_ldap.constants.RE_HOSTNAME=ad_ldap.constants-module.html#RE_HOSTNAME"><a title="ad_ldap.constants.RE_HOSTNAME" class="py-name" href="#" onclick="return doclink('link-30', 'RE_HOSTNAME', 'link-30');">RE_HOSTNAME</a></tt> <tt class="py-op">=</tt> <tt class="py-name">re</tt><tt class="py-op">.</tt><tt class="py-name">compile</tt><tt class="py-op">(</tt><tt class="py-string">'^[^.]+'</tt><tt class="py-op">)</tt> </tt>
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line"> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line"><tt class="py-comment"># These pull the CN or OU value of the distinguishedName</tt> </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-31" class="py-name" targets="Variable ad_ldap.constants.RE_CN=ad_ldap.constants-module.html#RE_CN"><a title="ad_ldap.constants.RE_CN" class="py-name" href="#" onclick="return doclink('link-31', 'RE_CN', 'link-31');">RE_CN</a></tt> <tt class="py-op">=</tt> <tt class="py-name">re</tt><tt class="py-op">.</tt><tt class="py-name">compile</tt><tt class="py-op">(</tt><tt class="py-string">'^CN=([^,]+)'</tt><tt class="py-op">)</tt> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line"><tt id="link-32" class="py-name" targets="Variable ad_ldap.constants.RE_OU=ad_ldap.constants-module.html#RE_OU"><a title="ad_ldap.constants.RE_OU" class="py-name" href="#" onclick="return doclink('link-32', 'RE_OU', 'link-32');">RE_OU</a></tt> <tt class="py-op">=</tt> <tt class="py-name">re</tt><tt class="py-op">.</tt><tt class="py-name">compile</tt><tt class="py-op">(</tt><tt class="py-string">'^OU=([^,]+)'</tt><tt class="py-op">)</tt> </tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line"> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line"><tt class="py-comment"># Prefixes for objectCategory attributes to help with identifying objects</tt> </tt>
+<a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-33" class="py-name" targets="Variable ad_ldap.constants.CAT_USER=ad_ldap.constants-module.html#CAT_USER"><a title="ad_ldap.constants.CAT_USER" class="py-name" href="#" onclick="return doclink('link-33', 'CAT_USER', 'link-33');">CAT_USER</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'CN=Person,CN=Schema,'</tt> </tt>
+<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line"><tt id="link-34" class="py-name" targets="Variable ad_ldap.constants.CAT_COMPUTER=ad_ldap.constants-module.html#CAT_COMPUTER"><a title="ad_ldap.constants.CAT_COMPUTER" class="py-name" href="#" onclick="return doclink('link-34', 'CAT_COMPUTER', 'link-34');">CAT_COMPUTER</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'CN=Computer,CN=Schema,'</tt> </tt>
+<a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line"><tt id="link-35" class="py-name" targets="Variable ad_ldap.constants.CAT_GROUP=ad_ldap.constants-module.html#CAT_GROUP"><a title="ad_ldap.constants.CAT_GROUP" class="py-name" href="#" onclick="return doclink('link-35', 'CAT_GROUP', 'link-35');">CAT_GROUP</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'CN=Group,CN=Schema,'</tt> </tt>
+<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line"><tt id="link-36" class="py-name" targets="Variable ad_ldap.constants.CAT_OU=ad_ldap.constants-module.html#CAT_OU"><a title="ad_ldap.constants.CAT_OU" class="py-name" href="#" onclick="return doclink('link-36', 'CAT_OU', 'link-36');">CAT_OU</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'CN=Organizational-Unit,CN=Schema,'</tt> </tt>
+<a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line"><tt id="link-37" class="py-name" targets="Variable ad_ldap.constants.CAT_CN=ad_ldap.constants-module.html#CAT_CN"><a title="ad_ldap.constants.CAT_CN" class="py-name" href="#" onclick="return doclink('link-37', 'CAT_CN', 'link-37');">CAT_CN</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'CN=Container,CN=Schema,'</tt> </tt>
+<a name="L84"></a><tt class="py-lineno">84</tt>  <tt class="py-line"><tt id="link-38" class="py-name" targets="Variable ad_ldap.constants.CAT_DOMAIN=ad_ldap.constants-module.html#CAT_DOMAIN"><a title="ad_ldap.constants.CAT_DOMAIN" class="py-name" href="#" onclick="return doclink('link-38', 'CAT_DOMAIN', 'link-38');">CAT_DOMAIN</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'CN=Domain-DNS,CN=Schema,'</tt> </tt>
+<a name="L85"></a><tt class="py-lineno">85</tt>  <tt class="py-line"> </tt>
+<a name="L86"></a><tt class="py-lineno">86</tt>  <tt class="py-line"><tt class="py-comment"># The set of objectClass values required for each kind of object</tt> </tt>
+<a name="L87"></a><tt class="py-lineno">87</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt id="link-39" class="py-name" targets="Variable ad_ldap.constants.CLASS_USER=ad_ldap.constants-module.html#CLASS_USER"><a title="ad_ldap.constants.CLASS_USER" class="py-name" href="#" onclick="return doclink('link-39', 'CLASS_USER', 'link-39');">CLASS_USER</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'organizationalPerson'</tt><tt class="py-op">,</tt> <tt class="py-string">'person'</tt><tt class="py-op">,</tt> <tt class="py-string">'top'</tt><tt class="py-op">,</tt> <tt class="py-string">'user'</tt><tt class="py-op">]</tt> </tt>
+<a name="L88"></a><tt class="py-lineno">88</tt>  <tt class="py-line"><tt id="link-40" class="py-name" targets="Variable ad_ldap.constants.CLASS_COMPUTER=ad_ldap.constants-module.html#CLASS_COMPUTER"><a title="ad_ldap.constants.CLASS_COMPUTER" class="py-name" href="#" onclick="return doclink('link-40', 'CLASS_COMPUTER', 'link-40');">CLASS_COMPUTER</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'computer'</tt><tt class="py-op">,</tt> <tt class="py-string">'organizationalPerson'</tt><tt class="py-op">,</tt> <tt class="py-string">'person'</tt><tt class="py-op">,</tt> <tt class="py-string">'top'</tt><tt class="py-op">,</tt> <tt class="py-string">'user'</tt><tt class="py-op">]</tt> </tt>
+<a name="L89"></a><tt class="py-lineno">89</tt>  <tt class="py-line"><tt id="link-41" class="py-name" targets="Variable ad_ldap.constants.CLASS_OU=ad_ldap.constants-module.html#CLASS_OU"><a title="ad_ldap.constants.CLASS_OU" class="py-name" href="#" onclick="return doclink('link-41', 'CLASS_OU', 'link-41');">CLASS_OU</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'organizationalUnit'</tt><tt class="py-op">,</tt> <tt class="py-string">'top'</tt><tt class="py-op">]</tt> </tt>
+<a name="L90"></a><tt class="py-lineno">90</tt>  <tt class="py-line"><tt id="link-42" class="py-name" targets="Variable ad_ldap.constants.CLASS_GROUP=ad_ldap.constants-module.html#CLASS_GROUP"><a title="ad_ldap.constants.CLASS_GROUP" class="py-name" href="#" onclick="return doclink('link-42', 'CLASS_GROUP', 'link-42');">CLASS_GROUP</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'group'</tt><tt class="py-op">,</tt> <tt class="py-string">'top'</tt><tt class="py-op">]</tt> </tt>
+<a name="L91"></a><tt class="py-lineno">91</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ad_ldap-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/py-ad-ldap">py-ad-ldap</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Feb 01 17:00:01 2011
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
