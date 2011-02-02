@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ad_ldap.errors</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ad_ldap-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/py-ad-ldap">py-ad-ldap</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ad_ldap-module.html">Package&nbsp;ad_ldap</a> ::
+        Module&nbsp;errors
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ad_ldap.errors-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="ad_ldap.errors-module.html">Module ad_ldap.errors</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-comment"></tt><tt class="py-docstring">"""A module containing the exception classes for the adldap module.</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">Copyright 2010 Google Inc.</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">Licensed under the Apache License, Version 2.0 (the "License");</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">you may not use this file except in compliance with the License.</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring">You may obtain a copy of the License at</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-docstring">     http://www.apache.org/licenses/LICENSE-2.0</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"><tt class="py-docstring">Unless required by applicable law or agreed to in writing, software</tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-docstring">distributed under the License is distributed on an "AS IS" BASIS,</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-docstring">WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"><tt class="py-docstring">See the License for the specific language governing permissions and</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"><tt class="py-docstring">limitations under the License.</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"> </tt>
+<a name="Error"></a><div id="Error-def"><a name="L19"></a><tt class="py-lineno">19</tt> <a class="py-toggle" href="#" id="Error-toggle" onclick="return toggle('Error');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.Error-class.html">Error</a><tt class="py-op">(</tt><tt class="py-base-class">Exception</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Error-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Error-expanded"><a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">  <tt class="py-docstring">"""Generic Error class for adldap."""</tt> </tt>
+</div><a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"> </tt>
+<a name="ObjectPropertyNotFoundError"></a><div id="ObjectPropertyNotFoundError-def"><a name="L23"></a><tt class="py-lineno">23</tt> <a class="py-toggle" href="#" id="ObjectPropertyNotFoundError-toggle" onclick="return toggle('ObjectPropertyNotFoundError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.ObjectPropertyNotFoundError-class.html">ObjectPropertyNotFoundError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ObjectPropertyNotFoundError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="ObjectPropertyNotFoundError-expanded"><a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">  <tt class="py-docstring">"""An attempt was made to access a property that was not found."""</tt> </tt>
+</div><a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"> </tt>
+<a name="UserNotDisabledError"></a><div id="UserNotDisabledError-def"><a name="L27"></a><tt class="py-lineno">27</tt> <a class="py-toggle" href="#" id="UserNotDisabledError-toggle" onclick="return toggle('UserNotDisabledError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.UserNotDisabledError-class.html">UserNotDisabledError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UserNotDisabledError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="UserNotDisabledError-expanded"><a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">  <tt class="py-docstring">"""An attempt was made to enable a user that was not disabled."""</tt> </tt>
+</div><a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"> </tt>
+<a name="UserNotEnabledError"></a><div id="UserNotEnabledError-def"><a name="L31"></a><tt class="py-lineno">31</tt> <a class="py-toggle" href="#" id="UserNotEnabledError-toggle" onclick="return toggle('UserNotEnabledError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.UserNotEnabledError-class.html">UserNotEnabledError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UserNotEnabledError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="UserNotEnabledError-expanded"><a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">  <tt class="py-docstring">"""An attempt was made to disable a user that was not enabled."""</tt> </tt>
+</div><a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"> </tt>
+<a name="UserNotLockedOutError"></a><div id="UserNotLockedOutError-def"><a name="L35"></a><tt class="py-lineno">35</tt> <a class="py-toggle" href="#" id="UserNotLockedOutError-toggle" onclick="return toggle('UserNotLockedOutError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.UserNotLockedOutError-class.html">UserNotLockedOutError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UserNotLockedOutError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="UserNotLockedOutError-expanded"><a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line">  <tt class="py-docstring">"""An attempt was made to unlock a user that is not locked out."""</tt> </tt>
+</div><a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"> </tt>
+<a name="NoComputerPasswordResetError"></a><div id="NoComputerPasswordResetError-def"><a name="L39"></a><tt class="py-lineno">39</tt> <a class="py-toggle" href="#" id="NoComputerPasswordResetError-toggle" onclick="return toggle('NoComputerPasswordResetError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.NoComputerPasswordResetError-class.html">NoComputerPasswordResetError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NoComputerPasswordResetError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="NoComputerPasswordResetError-expanded"><a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">  <tt class="py-docstring">"""Resetting the password for computer objects is not supported."""</tt> </tt>
+</div><a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"> </tt>
+<a name="LDAPConnectionFailedError"></a><div id="LDAPConnectionFailedError-def"><a name="L43"></a><tt class="py-lineno">43</tt> <a class="py-toggle" href="#" id="LDAPConnectionFailedError-toggle" onclick="return toggle('LDAPConnectionFailedError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.LDAPConnectionFailedError-class.html">LDAPConnectionFailedError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="LDAPConnectionFailedError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="LDAPConnectionFailedError-expanded"><a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">  <tt class="py-docstring">"""The LDAP server could not be contacted."""</tt> </tt>
+</div><a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line"> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line"> </tt>
+<a name="InvalidCredentialsError"></a><div id="InvalidCredentialsError-def"><a name="L47"></a><tt class="py-lineno">47</tt> <a class="py-toggle" href="#" id="InvalidCredentialsError-toggle" onclick="return toggle('InvalidCredentialsError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.InvalidCredentialsError-class.html">InvalidCredentialsError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InvalidCredentialsError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="InvalidCredentialsError-expanded"><a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">  <tt class="py-docstring">"""The credentials supplied were invalid."""</tt> </tt>
+</div><a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"> </tt>
+<a name="QueryTimeoutError"></a><div id="QueryTimeoutError-def"><a name="L51"></a><tt class="py-lineno">51</tt> <a class="py-toggle" href="#" id="QueryTimeoutError-toggle" onclick="return toggle('QueryTimeoutError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.QueryTimeoutError-class.html">QueryTimeoutError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="QueryTimeoutError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="QueryTimeoutError-expanded"><a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line">  <tt class="py-docstring">"""The ldap query timed out waiting for results."""</tt> </tt>
+</div><a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line"> </tt>
+<a name="InvalidPropertyFormatError"></a><div id="InvalidPropertyFormatError-def"><a name="L55"></a><tt class="py-lineno">55</tt> <a class="py-toggle" href="#" id="InvalidPropertyFormatError-toggle" onclick="return toggle('InvalidPropertyFormatError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.InvalidPropertyFormatError-class.html">InvalidPropertyFormatError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InvalidPropertyFormatError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="InvalidPropertyFormatError-expanded"><a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">  <tt class="py-docstring">"""The properties requested for the object are in an invalid format."""</tt> </tt>
+</div><a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line"> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line"> </tt>
+<a name="ADObjectClassOnlyError"></a><div id="ADObjectClassOnlyError-def"><a name="L59"></a><tt class="py-lineno">59</tt> <a class="py-toggle" href="#" id="ADObjectClassOnlyError-toggle" onclick="return toggle('ADObjectClassOnlyError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.ADObjectClassOnlyError-class.html">ADObjectClassOnlyError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ADObjectClassOnlyError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="ADObjectClassOnlyError-expanded"><a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line">  <tt class="py-docstring">"""These results can only be retrieved when using the ADObject class type."""</tt> </tt>
+</div><a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line"> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line"> </tt>
+<a name="ADObjectNotFoundError"></a><div id="ADObjectNotFoundError-def"><a name="L63"></a><tt class="py-lineno">63</tt> <a class="py-toggle" href="#" id="ADObjectNotFoundError-toggle" onclick="return toggle('ADObjectNotFoundError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.ADObjectNotFoundError-class.html">ADObjectNotFoundError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ADObjectNotFoundError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="ADObjectNotFoundError-expanded"><a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">  <tt class="py-docstring">"""The search returned zero results."""</tt> </tt>
+</div><a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line"> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line"> </tt>
+<a name="ADDomainNotConnectedError"></a><div id="ADDomainNotConnectedError-def"><a name="L67"></a><tt class="py-lineno">67</tt> <a class="py-toggle" href="#" id="ADDomainNotConnectedError-toggle" onclick="return toggle('ADDomainNotConnectedError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.ADDomainNotConnectedError-class.html">ADDomainNotConnectedError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ADDomainNotConnectedError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="ADDomainNotConnectedError-expanded"><a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">  <tt class="py-docstring">"""You must call Connect() on the Domain object before this operation."""</tt> </tt>
+</div><a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line"> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line"> </tt>
+<a name="ADPasswordSetFailedError"></a><div id="ADPasswordSetFailedError-def"><a name="L71"></a><tt class="py-lineno">71</tt> <a class="py-toggle" href="#" id="ADPasswordSetFailedError-toggle" onclick="return toggle('ADPasswordSetFailedError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.ADPasswordSetFailedError-class.html">ADPasswordSetFailedError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ADPasswordSetFailedError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="ADPasswordSetFailedError-expanded"><a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line">  <tt class="py-docstring">"""The attempt to update the password failed."""</tt> </tt>
+</div><a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line"> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line"> </tt>
+<a name="MemberAlreadyError"></a><div id="MemberAlreadyError-def"><a name="L75"></a><tt class="py-lineno">75</tt> <a class="py-toggle" href="#" id="MemberAlreadyError-toggle" onclick="return toggle('MemberAlreadyError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.MemberAlreadyError-class.html">MemberAlreadyError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="MemberAlreadyError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="MemberAlreadyError-expanded"><a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">  <tt class="py-docstring">"""The group member already exists."""</tt> </tt>
+</div><a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line"> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line"> </tt>
+<a name="NotAMemberError"></a><div id="NotAMemberError-def"><a name="L79"></a><tt class="py-lineno">79</tt> <a class="py-toggle" href="#" id="NotAMemberError-toggle" onclick="return toggle('NotAMemberError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.NotAMemberError-class.html">NotAMemberError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NotAMemberError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="NotAMemberError-expanded"><a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line">  <tt class="py-docstring">"""The object is not a member of the group."""</tt> </tt>
+</div><a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line"> </tt>
+<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line"> </tt>
+<a name="NonListParameterError"></a><div id="NonListParameterError-def"><a name="L83"></a><tt class="py-lineno">83</tt> <a class="py-toggle" href="#" id="NonListParameterError-toggle" onclick="return toggle('NonListParameterError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.NonListParameterError-class.html">NonListParameterError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NonListParameterError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="NonListParameterError-expanded"><a name="L84"></a><tt class="py-lineno">84</tt>  <tt class="py-line">  <tt class="py-docstring">"""The parameter must be a list or other iterable."""</tt> </tt>
+</div><a name="L85"></a><tt class="py-lineno">85</tt>  <tt class="py-line"> </tt>
+<a name="L86"></a><tt class="py-lineno">86</tt>  <tt class="py-line"> </tt>
+<a name="ServerRefusedOperationError"></a><div id="ServerRefusedOperationError-def"><a name="L87"></a><tt class="py-lineno">87</tt> <a class="py-toggle" href="#" id="ServerRefusedOperationError-toggle" onclick="return toggle('ServerRefusedOperationError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ad_ldap.errors.ServerRefusedOperationError-class.html">ServerRefusedOperationError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ServerRefusedOperationError-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="ServerRefusedOperationError-expanded"><a name="L88"></a><tt class="py-lineno">88</tt>  <tt class="py-line">  <tt class="py-docstring">"""The server refused to perform the operation requested."""</tt> </tt>
+</div><a name="L89"></a><tt class="py-lineno">89</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ad_ldap-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/py-ad-ldap">py-ad-ldap</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Feb 01 17:00:01 2011
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

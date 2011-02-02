@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class Hierarchy</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ad_ldap-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/py-ad-ldap">py-ad-ldap</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">&nbsp;</td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="class-tree.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<center><b>
+ [ <a href="module-tree.html">Module Hierarchy</a>
+ | <a href="class-tree.html">Class Hierarchy</a> ]
+</b></center><br />
+<h1 class="epydoc">Class Hierarchy</h1>
+<ul class="nomargin-top">
+    <li> <strong class="uidlink">exceptions.Exception</strong>:
+      <em class="summary">Common base class for all exceptions.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.Error-class.html">ad_ldap.errors.Error</a></strong>:
+      <em class="summary">Generic Error class for adldap.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.ADDomainNotConnectedError-class.html">ad_ldap.errors.ADDomainNotConnectedError</a></strong>:
+      <em class="summary">You must call Connect() on the Domain object before this operation.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.ADObjectClassOnlyError-class.html">ad_ldap.errors.ADObjectClassOnlyError</a></strong>:
+      <em class="summary">These results can only be retrieved when using the ADObject class 
+        type.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.ADObjectNotFoundError-class.html">ad_ldap.errors.ADObjectNotFoundError</a></strong>:
+      <em class="summary">The search returned zero results.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.ADPasswordSetFailedError-class.html">ad_ldap.errors.ADPasswordSetFailedError</a></strong>:
+      <em class="summary">The attempt to update the password failed.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.InvalidCredentialsError-class.html">ad_ldap.errors.InvalidCredentialsError</a></strong>:
+      <em class="summary">The credentials supplied were invalid.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.InvalidPropertyFormatError-class.html">ad_ldap.errors.InvalidPropertyFormatError</a></strong>:
+      <em class="summary">The properties requested for the object are in an invalid format.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.LDAPConnectionFailedError-class.html">ad_ldap.errors.LDAPConnectionFailedError</a></strong>:
+      <em class="summary">The LDAP server could not be contacted.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.MemberAlreadyError-class.html">ad_ldap.errors.MemberAlreadyError</a></strong>:
+      <em class="summary">The group member already exists.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.NoComputerPasswordResetError-class.html">ad_ldap.errors.NoComputerPasswordResetError</a></strong>:
+      <em class="summary">Resetting the password for computer objects is not supported.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.NonListParameterError-class.html">ad_ldap.errors.NonListParameterError</a></strong>:
+      <em class="summary">The parameter must be a list or other iterable.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.NotAMemberError-class.html">ad_ldap.errors.NotAMemberError</a></strong>:
+      <em class="summary">The object is not a member of the group.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.ObjectPropertyNotFoundError-class.html">ad_ldap.errors.ObjectPropertyNotFoundError</a></strong>:
+      <em class="summary">An attempt was made to access a property that was not found.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.QueryTimeoutError-class.html">ad_ldap.errors.QueryTimeoutError</a></strong>:
+      <em class="summary">The ldap query timed out waiting for results.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.ServerRefusedOperationError-class.html">ad_ldap.errors.ServerRefusedOperationError</a></strong>:
+      <em class="summary">The server refused to perform the operation requested.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.UserNotDisabledError-class.html">ad_ldap.errors.UserNotDisabledError</a></strong>:
+      <em class="summary">An attempt was made to enable a user that was not disabled.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.UserNotEnabledError-class.html">ad_ldap.errors.UserNotEnabledError</a></strong>:
+      <em class="summary">An attempt was made to disable a user that was not enabled.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.errors.UserNotLockedOutError-class.html">ad_ldap.errors.UserNotLockedOutError</a></strong>:
+      <em class="summary">An attempt was made to unlock a user that is not locked out.</em>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink">object</strong>:
+      <em class="summary">The most base type</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="ad_ldap.ad_ldap.ADObject-class.html">ad_ldap.ad_ldap.ADObject</a></strong>:
+      <em class="summary">A generic AD Object.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="ad_ldap.ad_ldap.Container-class.html">ad_ldap.ad_ldap.Container</a></strong>:
+      <em class="summary">An Active Directory CN or OU object.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.ad_ldap.Group-class.html">ad_ldap.ad_ldap.Group</a></strong>:
+      <em class="summary">An Active Directory Group object.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.ad_ldap.User-class.html">ad_ldap.ad_ldap.User</a></strong>:
+      <em class="summary">An Active Directory user object.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="ad_ldap.ad_ldap.Computer-class.html">ad_ldap.ad_ldap.Computer</a></strong>:
+      <em class="summary">An Active Directory computer object.</em>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="ad_ldap.ad_ldap.Domain-class.html">ad_ldap.ad_ldap.Domain</a></strong>:
+      <em class="summary">Represents an Active Directory Domain.</em>
+    </li>
+    </ul>
+    </li>
+</ul>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ad_ldap-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/py-ad-ldap">py-ad-ldap</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Feb 01 17:00:00 2011
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

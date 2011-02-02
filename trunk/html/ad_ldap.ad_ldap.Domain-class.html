@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ad_ldap.ad_ldap.Domain</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ad_ldap-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/py-ad-ldap">py-ad-ldap</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ad_ldap-module.html">Package&nbsp;ad_ldap</a> ::
+        <a href="ad_ldap.ad_ldap-module.html">Module&nbsp;ad_ldap</a> ::
+        Class&nbsp;Domain
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ad_ldap.ad_ldap.Domain-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Domain</h1><p class="nomargin-top"><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+object --+
+         |
+        <strong class="uidshort">Domain</strong>
+</pre>
+
+<hr />
+<p>Represents an Active Directory Domain.</p>
+  <p>The Domain object performs all interactions with Active Directory, 
+  including searching for objects, modifying objects, and deleting objects.
+  Some tasks that can be called from a method of an ADObject, like Delete()
+  actually call the parent Domain object's method to do the dirty work.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Initialize the Domain object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#__repr__" class="summary-sig-name">__repr__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      repr(x)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.__repr__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#Connect" class="summary-sig-name">Connect</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">ldap_host</span>,
+        <span class="summary-sig-arg">user</span>,
+        <span class="summary-sig-arg">password</span>,
+        <span class="summary-sig-arg">cert_dir</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">cert_file</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Connect to the ldap server.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.Connect">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="Disconnect"></a><span class="summary-sig-name">Disconnect</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Disconnects from ldap.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.Disconnect">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetRootDseAttrs"></a><span class="summary-sig-name">GetRootDseAttrs</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Gets the root DSE attributes.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetRootDseAttrs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#Search" class="summary-sig-name">Search</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">ldap_filter</span>,
+        <span class="summary-sig-arg">base_dn</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">obj_class</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">scope</span>=<span class="summary-sig-default">2</span>,
+        <span class="summary-sig-arg">properties</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Searches ActiveDirectory for objects that match the ldap filter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.Search">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#NewObject" class="summary-sig-name">NewObject</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">distinguished_name</span>,
+        <span class="summary-sig-arg">properties</span>)</span><br />
+      Creates a new object in Active Directory.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.NewObject">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#UpdateObject" class="summary-sig-name">UpdateObject</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">distinguished_name</span>,
+        <span class="summary-sig-arg">current_props</span>,
+        <span class="summary-sig-arg">updated_props</span>)</span><br />
+      Updates an object in Active Directory.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.UpdateObject">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#DeleteObject" class="summary-sig-name">DeleteObject</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">distinguished_name</span>)</span><br />
+      Delete an object from Active Directory.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.DeleteObject">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetObjectByName" class="summary-sig-name">GetObjectByName</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Get an ADObject from AD based on its sAMAccountName.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetObjectByName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetUserByName" class="summary-sig-name">GetUserByName</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">user_name</span>)</span><br />
+      Get a user object from AD based on its sAMAccountName.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetUserByName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetComputerByName" class="summary-sig-name">GetComputerByName</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">computer_name</span>)</span><br />
+      Get a Computer object from AD based on its hostname.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetComputerByName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetGroupByName" class="summary-sig-name">GetGroupByName</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">group_name</span>)</span><br />
+      Get a Group object from AD based on its hostname.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetGroupByName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetObjectByDN" class="summary-sig-name">GetObjectByDN</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">distinguished_name</span>)</span><br />
+      Gets an ADObject object based on the distinguished name(DN).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetObjectByDN">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetUserByDN" class="summary-sig-name">GetUserByDN</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">distinguished_name</span>)</span><br />
+      Gets a User object based on the distinguished name(DN).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetUserByDN">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetComputerByDN" class="summary-sig-name">GetComputerByDN</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">distinguished_name</span>)</span><br />
+      Gets a Computer object based on the distinguished name(DN).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetComputerByDN">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetGroupByDN" class="summary-sig-name">GetGroupByDN</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">distinguished_name</span>)</span><br />
+      Gets a Group object based on the distinguished name(DN).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetGroupByDN">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GetContainerByDN" class="summary-sig-name">GetContainerByDN</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">distinguished_name</span>)</span><br />
+      Gets a Group object based on the distinguished name(DN).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetContainerByDN">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ad_ldap.ad_ldap.Domain-class.html#GuessObjectType" class="summary-sig-name">GuessObjectType</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">obj</span>)</span><br />
+      Try to find the best ad_ldap object class for the object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GuessObjectType">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__setattr__</code>,
+      <code>__str__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="ad_ldap.ad_ldap.Domain-class.html#dns_name" class="summary-name">dns_name</a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Initialize the Domain object.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__repr__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__repr__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Representation operator)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.__repr__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>repr(x)</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__repr__
+        <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Connect"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Connect</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">ldap_host</span>,
+        <span class="sig-arg">user</span>,
+        <span class="sig-arg">password</span>,
+        <span class="sig-arg">cert_dir</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">cert_file</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.Connect">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Connect to the ldap server.
+
+Args:
+  ldap_host:  The ldap host to connect to
+  user: the username for authentication
+  password: the password for authentication
+  cert_dir: The directory containing the SSL cert file
+  cert_file: The file name of the cert
+
+Raises:
+  errors.LDAPConnectionFailedError: if no ldap connection can be made
+  errors.InvalidCredentialsError: if the ldap credentials are not accepted
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="Search"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Search</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">ldap_filter</span>,
+        <span class="sig-arg">base_dn</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">obj_class</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">scope</span>=<span class="sig-default">2</span>,
+        <span class="sig-arg">properties</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.Search">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Searches ActiveDirectory for objects that match the ldap filter.
+
+Args:
+  ldap_filter: an LDAP filter
+  base_dn: the distinguished name of the container to start in
+  obj_class: can be any class that inherits from ADObject
+  scope: one of the ldap SCOPE_ constants
+  properties: a list of properties to retrieve
+
+Returns:
+  A list of objects.
+
+Raises:
+  errors.QueryTimeoutError: if the timeout period is exceeded
+  errors.ADDomainNotConnectedError: if a search is attempted before calling
+                                    Connect() on the Domain object
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="NewObject"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">NewObject</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">distinguished_name</span>,
+        <span class="sig-arg">properties</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.NewObject">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Creates a new object in Active Directory.
+
+Args:
+  distinguished_name: the desired distinguished name of the object
+  properties: a hash of properties and values to apply to the new object
+
+Note:  Join one of the constants.CAT_ constants with the Domain object's
+       dn_configuration property to get a DN for objectCategory.
+       (e.g. 'objectCategory': '%s%s'
+        % (constants.CAT_USER, ad.dn_configuration))
+       Each object also needs the correct objectClass.  Check out the
+       constants.CLASS_* constants.
+       Also, don't forget that the values of the properties hash should
+       all be lists, even if they are single-valued attributes.
+
+Returns:
+  True on success
+  False on failure
+
+Raises:
+  errors.ADDomainNotConnectedError: if used before calling Connect()
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="UpdateObject"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">UpdateObject</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">distinguished_name</span>,
+        <span class="sig-arg">current_props</span>,
+        <span class="sig-arg">updated_props</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.UpdateObject">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Updates an object in Active Directory.
+
+Args:
+  distinguished_name: the distinguished name of the object to be modified
+  current_props: a dict of the current properties and values
+  updated_props: a dict of the new properties and values
+
+Returns:
+  True on success
+  False on failure
+
+Raises:
+  errors.ADDomainNotConnectedError: if used before calling Connect()
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="DeleteObject"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">DeleteObject</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">distinguished_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.DeleteObject">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Delete an object from Active Directory.
+
+Args:
+  distinguished_name: the full distinguished name of the object
+
+Raises:
+  errors.ADDomainNotConnectedError: if used before calling Connect()
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetObjectByName"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetObjectByName</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetObjectByName">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Get an ADObject from AD based on its sAMAccountName.
+
+Args:
+  name: the Windows username (sAMAccountName) of the user
+
+Returns:
+  An ADObject object on success, nothing if no user found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetUserByName"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetUserByName</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">user_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetUserByName">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Get a user object from AD based on its sAMAccountName.
+
+Args:
+  user_name: the Windows username (sAMAccountName) of the user
+
+Returns:
+  A user object on success, nothing if no user found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetComputerByName"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetComputerByName</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">computer_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetComputerByName">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Get a Computer object from AD based on its hostname.
+
+Args:
+  computer_name: the hostname of the computer.  can be fqdn, sAMAccountName,
+                 or computername
+Returns:
+  A Computer object on success, nothing if no computer found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetGroupByName"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetGroupByName</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">group_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetGroupByName">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Get a Group object from AD based on its hostname.
+
+Args:
+  group_name: the name of the group.
+Returns:
+  A Group object on success, nothing if no computer found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetObjectByDN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetObjectByDN</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">distinguished_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetObjectByDN">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Gets an ADObject object based on the distinguished name(DN).
+
+Args:
+  distinguished_name:  A string with the distinguished name of the object
+
+Returns:
+  An ADObject object on success, nothing if no user found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetUserByDN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetUserByDN</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">distinguished_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetUserByDN">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Gets a User object based on the distinguished name(DN).
+
+Args:
+  distinguished_name:  A string with the distinguished name of the object
+
+Returns:
+  A User object on success, nothing if no user found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetComputerByDN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetComputerByDN</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">distinguished_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetComputerByDN">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Gets a Computer object based on the distinguished name(DN).
+
+Args:
+  distinguished_name:  A string with the distinguished name of the object
+
+Returns:
+  A Computer object on success, nothing if no user found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetGroupByDN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetGroupByDN</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">distinguished_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetGroupByDN">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Gets a Group object based on the distinguished name(DN).
+
+Args:
+  distinguished_name:  A string with the distinguished name of the object
+
+Returns:
+  A User object on success, nothing if no user found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetContainerByDN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetContainerByDN</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">distinguished_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GetContainerByDN">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Gets a Group object based on the distinguished name(DN).
+
+Args:
+  distinguished_name:  A string with the distinguished name of the object
+
+Returns:
+  A User object on success, nothing if no user found.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="GuessObjectType"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GuessObjectType</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">obj</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ad_ldap.ad_ldap-pysrc.html#Domain.GuessObjectType">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+Try to find the best ad_ldap object class for the object.
+
+Args:
+  obj: an ADObject object
+
+Raises:
+  errors.ADObjectClassOnlyError: if the object passed is not an ADObject
+
+Returns:
+  If the object type can be guessed: return an object of that class for
+                                     the same distinguished name
+  Otherwise return the object unchanged.
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== PROPERTY DETAILS ==================== -->
+<a name="section-PropertyDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Property Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-PropertyDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="dns_name"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">dns_name</h3>
+  
+  <dl class="fields">
+    <dt>Get Method:</dt>
+    <dd class="value"><span class="summary-sig"><i>unreachable</i>.dns_name(<span class="summary-sig-arg">self</span>)</span>
+        - Constructs the dns name of the domain from the distinguished name.
+    </dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ad_ldap-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://code.google.com/p/py-ad-ldap">py-ad-ldap</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Feb 01 17:00:01 2011
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
