@@ -40,9 +40,9 @@ import time
 import constants
 import errors
 import ldap
+import ldap.controls
 import ldap.filter
 import ldap.modlist
-
 
 def ADTimeToUnix(ad_time):
   """Converts AD double-wide int format to seconds since the epoch format.
@@ -159,12 +159,12 @@ class Domain(object):
     if cert_file:
       ldap.set_option(ldap.OPT_X_TLS_CACERTFILE, cert_file)
 
-
     # NOTE: I intentionally wrote this to use ldaps instead of ldap.  Using
     #       a non-SSL connection will send your domain password over the wire
     #       in cleartext.
     try:
       self._ldap = ldap.initialize('ldaps://%s' % ldap_host)
+      self._ldap.protocol_version = 3
       self._ldap.simple_bind_s(user, password)
       self._connected = True
       self._ldap.set_option(ldap.OPT_REFERRALS, 0)
@@ -220,9 +220,10 @@ class Domain(object):
     if not self._connected:
       raise errors.ADDomainNotConnectedError
 
-    raw = None
+    raw = []
     results = []
     result_class = obj_class
+    page_size = 500
 
     if not base_dn:
       base_dn = self.dn_root
@@ -230,12 +231,41 @@ class Domain(object):
     if not result_class:
       result_class = ADObject
 
+    lc = ldap.controls.SimplePagedResultsControl(ldap.LDAP_CONTROL_PAGE_OID,
+                                                 True,
+                                                (page_size, ''))
+
     try:
-      raw = self._ldap.search_s(base_dn, scope,
-                                ldap_filter,
-                                properties)
+      msgid = self._ldap.search_ext(base_dn, scope,
+                                    ldap_filter,
+                                    properties,
+                                    serverctrls=[lc])
     except ldap.TIMELIMIT_EXCEEDED:
       raise errors.QueryTimeoutError
+
+    while True:
+      rtype, rdata, rmsgid, serverctrls = self._ldap.result3(msgid)
+
+      for data in rdata:
+        raw.append(data)
+
+      page_controls = [
+          c for c in serverctrls if c.controlType == ldap.LDAP_CONTROL_PAGE_OID]
+
+      if page_controls:
+        est, cookie = page_controls[0].controlValue
+
+        if cookie:
+            lc.controlValue = (page_size, cookie)
+            msgid = self._ldap.search_ext(base_dn,
+                                          ldap.SCOPE_SUBTREE,
+                                          ldap_filter,
+                                          serverctrls=[lc])
+        else:
+            break  # There is no more data to fetch
+      else:
+        break # AD seems to not return page controls when the total size of
+              # the data is less than the page size.
 
     for result in raw:
       if result[0] is None:
@@ -557,11 +587,17 @@ class ADObject(object):
 
   @property
   def created_time(self):
-    return TextTimeToUnix(self.properties['whenCreated'][0])
+    if not self.properties['whenCreated'][0]:
+      return 0
+    else:
+      return TextTimeToUnix(self.properties['whenCreated'][0])
 
   @property
   def modified_time(self):
-    return TextTimeToUnix(self.properties['whenChanged'][0])
+    if not self.properties['whenChanged'][0]:
+      return 0
+    else:
+      return TextTimeToUnix(self.properties['whenChanged'][0])
 
   @property
   def canonical_name(self):
