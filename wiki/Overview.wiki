@@ -6,7 +6,7 @@ This project was born out of necessity because of the need to manage groups and 
 = Details =
 
 The basic workflow for using this module is:
-
+  # import ad_ldap from ad_ldap
   # Create an *ad_ldap.Domain* object
   # *Connect()* to a domain controller
   # *Search()* using ldap filters or one of the convenience methods.  This will return *ad_ldap.ADObject* objects, a generic class for Active Directory objects, or you can use the *object* argument to return a *User*, *Computer*, *Group*, or *Container* object which inherits from ADObject and adds more methods
